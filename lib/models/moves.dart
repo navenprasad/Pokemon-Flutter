@@ -5,7 +5,7 @@ void dealDamage(Pokemon enemy, double damage){
     enemy.receiveDamage(damage);
 }
 
-class AllMoves with BasicMoves, FireMoves {
+class AllMoves with BasicMoves, FireMoves, LeafMoves {
   void makeMove(String moveName, Pokemon enemy){
     switch(moveName){
       case 'Tackle' : { tackle(enemy); }
@@ -18,6 +18,9 @@ class AllMoves with BasicMoves, FireMoves {
       break;
       
       case 'Flame Thrower' : { flameThrower(enemy); }
+      break;
+
+      case 'Razor Leaf' : { razorLeaf(enemy); }
       break;
       
     }
@@ -53,4 +56,10 @@ mixin FireMoves {
     dealDamage(enemy, 200);
   }
 
+}
+
+mixin LeafMoves {
+  void razorLeaf(Pokemon enemy){
+    dealDamage(enemy, 100);
+  }
 }

@@ -133,7 +133,7 @@ class _HomeState extends State<Home> {
                     padding: const EdgeInsets.fromLTRB(10, 0, 0, 10),
                     child: Image.network(
                       poke2.getImage(),
-                      height: 140,
+                      height: 80,
                       fit: BoxFit.fitHeight,
                     ),
                   ),

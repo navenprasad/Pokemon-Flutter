@@ -48,10 +48,11 @@ abstract class Pokemon extends AllMoves{
 class Charmander extends Pokemon{
 
   Charmander(){
-    this._name = "Charmander";
+    this._name = "Charizard";
     this._moves = ['Tackle', 'Scratch', 'Flame Thrower'];
     this._maxHp = 200;
     this._hp = 200;
+    this._level = 36;
     this._imageUrl = "http://www.pokestadium.com/sprites/xy/charizard-3.gif";
   }
 
@@ -61,10 +62,10 @@ class Charmander extends Pokemon{
 class Bulbasaur extends Pokemon {
   Bulbasaur(){
     this._name = "Bulbasaur";
-    this._moves = ['Tackle', 'Scratch', 'Flame Thrower'];
+    this._moves = ['Tackle', 'Scratch', 'Razor Leaf',];
     this._maxHp = 200;
     this._hp = 200;
-    this._imageUrl = "http://www.pokestadium.com/sprites/xy/back/charizard.gif";
+    this._imageUrl = "http://www.pokestadium.com/sprites/xy/back/bulbasaur.gif";
   }
   
 }
